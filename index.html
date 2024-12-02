@@ -8,28 +8,55 @@
 </head>
 <body>
     <header>
-        <h1>Library Management System</h1>
+        <div class="logo">
+            <h1>Library Management System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <div class="form-container">
-            <h2>Add New Book</h2>
-            <form id="addBookForm">
-                <input type="text" id="title" placeholder="Book Title" required>
-                <input type="text" id="author" placeholder="Author" required>
-                <input type="text" id="genre" placeholder="Genre" required>
-                <button type="submit">Add Book</button>
+    <main>
+        <section id="home" class="intro">
+            <h2>Welcome to Our Library!</h2>
+            <p>Manage your library efficiently with our intuitive system.</p>
+            <a href="#search" class="button">Start Searching</a>
+        </section>
+
+        <section id="search" class="search">
+            <h2>Search for Books</h2>
+            <form>
+                <input type="text" placeholder="Enter book title or author" required>
+                <button type="submit">Search</button>
             </form>
-        </div>
+        </section>
 
-        <div class="books-list">
-            <h2>Available Books</h2>
-            <ul id="booksList">
-                <!-- Book list will be populated here -->
+        <section id="books" class="manage">
+            <h2>Manage Books</h2>
+            <ul>
+                <li><a href="#">Add New Book</a></li>
+                <li><a href="#">Update Book Information</a></li>
+                <li><a href="#">Delete Book</a></li>
             </ul>
-        </div>
-    </div>
+        </section>
 
-    <script src="app.js"></script>
+        <section id="members" class="manage">
+            <h2>Manage Members</h2>
+            <ul>
+                <li><a href="#">Add New Member</a></li>
+                <li><a href="#">Update Member Info</a></li>
+                <li><a href="#">Remove Member</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Library Management System. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
